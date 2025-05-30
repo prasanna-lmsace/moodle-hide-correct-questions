@@ -39,6 +39,7 @@ class mobile {
      * @return array HTML, javascript and otherdata
      */
     public static function mobile_quizaccess_hidecorrect($args) {
+
         return [
             "templates" => [
                 [
