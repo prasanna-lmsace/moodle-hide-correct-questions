@@ -26,30 +26,29 @@
 namespace quizaccess_hidecorrect\output;
 
 /**
- * Mobile output class for Deferred feedback (all-or-nothing) question behaviour
- *
- * @package    quizaccess_hidecorrect
- * @subpackage hidecorrect
- * @copyright  2023 LMSACE Dev Team.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * Mobile output class for Quiz access hide correct questions.
  */
 class mobile {
+
     /**
-     * Returns an empty template for quizaccess_hidecorrect
+     * Returns an empty template for quizaccess_hidecorrect, Currently not supported.
+     *
+     * Its purpose is to provide a placeholder for future mobile support.
+     *
      * @param  array $args Arguments from tool_mobile_get_content WS
      * @return array HTML, javascript and otherdata
      */
     public static function mobile_quizaccess_hidecorrect($args) {
-        return array(
-            "templates" => array(
-                array(
+        return [
+            "templates" => [
+                [
                     "id" => "hidecorrect",
                     "html" => "",
-                ),
-            ),
+                ],
+            ],
             "javascript" => "",
             "otherdata" => "",
-            "files" => array(),
-        );
+            "files" => [],
+        ];
     }
 }
