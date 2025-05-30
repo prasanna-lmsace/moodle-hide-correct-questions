@@ -266,7 +266,6 @@ class quizaccess_hidecorrect extends access_rule_base {
                 $nextpage = $attemptobj->summary_url();
             }
 
-
             $this->clean_up_session($attemptid);
 
             // Redirect to the next page.
@@ -367,7 +366,7 @@ class quizaccess_hidecorrect extends access_rule_base {
         $options = [
             self::DISABLE => get_string('disable'),
             self::ENABLE => get_string('hidecorrectenable', 'quizaccess_hidecorrect'),
-            self::PARTIAL => get_string('hidepartiallycorrect', 'quizaccess_hidecorrect')
+            self::PARTIAL => get_string('hidepartiallycorrect', 'quizaccess_hidecorrect'),
         ];
         $mform->addElement('select', 'hidecorrect', get_string('hidecorrect', 'quizaccess_hidecorrect'), $options);
         $mform->addHelpButton('hidecorrect', 'hidecorrect', 'quizaccess_hidecorrect');
@@ -385,7 +384,8 @@ class quizaccess_hidecorrect extends access_rule_base {
             self::DISABLE => get_string('disable'),
             self::ENABLE => get_string('preventreattemptenable', 'quizaccess_hidecorrect'),
         ];
-        $mform->addElement('select', 'hidecorrect_prevent_reattempt', get_string("preventreattempt", "quizaccess_hidecorrect"), $options);
+        $mform->addElement('select', 'hidecorrect_prevent_reattempt',
+            get_string("preventreattempt", "quizaccess_hidecorrect"), $options);
         $mform->addHelpButton('hidecorrect_prevent_reattempt', 'preventreattempt', 'quizaccess_hidecorrect');
         $mform->hideIf('hidecorrect_autograde', 'hidecorrect', 'eq', self::DISABLE);
 
