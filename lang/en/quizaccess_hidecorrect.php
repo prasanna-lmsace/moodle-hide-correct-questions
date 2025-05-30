@@ -23,17 +23,17 @@
  */
 
 $string['autograde'] = 'Questions auto-grade ';
-$string['autogradeenable'] = 'Auto-grade the correct questions';
 $string['autograde_help'] = 'Auto-grading applies the grades from the last attempt to correctly answered questions in the new attempt.';
+$string['autogradeenable'] = 'Auto-grade the correct questions';
 $string['hidecorrect'] = 'Hide certain questions on attempt';
-$string['hidecorrectenable'] = 'Hide correctly answered questions in a new attempt';
 $string['hidecorrect_help'] = 'When enabled, hide questions that were previously answered correctly in new attempts.
 <b> NOTE: This only works when the setting \'Each attempt builds on the last\' under \'Question behaviour\' is enabled for this quiz </b>';
+$string['hidecorrectenable'] = 'Hide correctly answered questions in a new attempt';
 $string['hidepartiallycorrect'] = 'Hide questions that have been correctly answered <b>AND</b> partially correctly answered in new attempts';
 $string['pagequestioncompletes'] = '<b>All questions in this quiz have been answered correctly in a previous attempt. There is no need to attempt the quiz again.</b>';
 $string['pluginname'] = 'Hide Correct Questions on New Attempt';
-$string['privacy:metadata'] = 'The Hide Correct Questions on New Attempt quiz access rule plugin does not store any personal data.';
 $string['preventreattempt'] = 'Prevent re-attempting the quiz';
 $string['preventreattempt_help'] = 'When enabled, prevents the user from re-attempting the quiz after all questions have been answered correctly in a previous attempt. This is useful to ensure that users do not retake the quiz unnecessarily.';
 $string['preventreattemptenable'] = 'Prevent re-attempting the quiz after all questions have been answered correctly';
+$string['privacy:metadata'] = 'The Hide Correct Questions on New Attempt quiz access rule plugin does not store any personal data.';
 $string['questioncompletes'] = 'All questions have been answered correctly. You cannot attempt the quiz again.';
